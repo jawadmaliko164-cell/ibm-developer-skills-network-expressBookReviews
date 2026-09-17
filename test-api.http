@@ -1,0 +1,43 @@
+### Get all books
+GET http://localhost:5000/
+
+### Get by ISBN
+GET http://localhost:5000/isbn/1
+
+### Get by author
+GET http://localhost:5000/author/Jane%20Austen
+
+### Get by title
+GET http://localhost:5000/title/Pride%20and%20Prejudice
+
+### Get reviews
+GET http://localhost:5000/review/1
+
+### Register
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "username": "jawad",
+  "password": "12345"
+}
+
+### Login
+POST http://localhost:5000/customer/login
+Content-Type: application/json
+
+{
+  "username": "jawad",
+  "password": "12345"
+}
+
+### Add/update review
+PUT http://localhost:5000/customer/auth/review/1
+Content-Type: application/json
+
+{
+  "review": "Very good book"
+}
+
+### Delete review
+DELETE http://localhost:5000/customer/auth/review/1
